@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="BadgeView" customModule="CompositionalLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCk-O3-KnA">
+                    <rect key="frame" x="10" y="30" width="60" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oCk-O3-KnA" secondAttribute="trailing" constant="10" id="2hr-0D-W7T"/>
+                <constraint firstItem="oCk-O3-KnA" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="HrH-i2-TSM"/>
+                <constraint firstItem="oCk-O3-KnA" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="VI0-t4-7mi"/>
+                <constraint firstItem="oCk-O3-KnA" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="yni-C5-yJi"/>
+            </constraints>
+            <connections>
+                <outlet property="countLabel" destination="oCk-O3-KnA" id="bbf-fE-Coo"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="146.65178571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>

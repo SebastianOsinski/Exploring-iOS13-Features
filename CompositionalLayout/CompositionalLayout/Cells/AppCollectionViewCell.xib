@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="AppCollectionViewCell" customModule="CompositionalLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="637" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="637" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awZ-mM-FN9">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="awZ-mM-FN9" secondAttribute="height" multiplier="1:1" id="dyA-im-KXc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rO-Yb-Pl9">
+                        <rect key="frame" x="184" y="71" width="398" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSd-DD-AfU">
+                        <rect key="frame" x="582" y="72" width="26" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <state key="normal" backgroundImage="cart.fill.badge.plus" catalog="system">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="awZ-mM-FN9" secondAttribute="bottom" id="0VN-kI-9K6"/>
+                <constraint firstAttribute="trailing" secondItem="eSd-DD-AfU" secondAttribute="trailing" constant="29" id="3qK-ts-APl"/>
+                <constraint firstItem="eSd-DD-AfU" firstAttribute="leading" secondItem="2rO-Yb-Pl9" secondAttribute="trailing" id="7W0-Wk-L5y"/>
+                <constraint firstItem="2rO-Yb-Pl9" firstAttribute="leading" secondItem="awZ-mM-FN9" secondAttribute="trailing" constant="20" id="LQy-dN-ACc"/>
+                <constraint firstItem="awZ-mM-FN9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NOz-7Q-b6E"/>
+                <constraint firstItem="2rO-Yb-Pl9" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UEK-6f-E4g"/>
+                <constraint firstItem="eSd-DD-AfU" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="hh4-Ze-ygC"/>
+                <constraint firstItem="awZ-mM-FN9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="t0Q-so-HLa"/>
+            </constraints>
+            <size key="customSize" width="637" height="164"/>
+            <connections>
+                <outlet property="colorView" destination="awZ-mM-FN9" id="8OW-Hr-Uis"/>
+                <outlet property="nameLabel" destination="2rO-Yb-Pl9" id="V8V-fe-3gf"/>
+            </connections>
+            <point key="canvasLocation" x="312.31884057971018" y="119.19642857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cart.fill.badge.plus" catalog="system" width="64" height="50"/>
+    </resources>
+</document>
